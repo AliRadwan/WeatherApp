@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BootCamp Projects.iml" filepath="$PROJECT_DIR$/BootCamp Projects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/BootCamp Projects.iml" filepath="$PROJECT_DIR$/.idea/BootCamp Projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/entities/entities.iml" filepath="$PROJECT_DIR$/entities/entities.iml" />
       <module fileurl="file://$PROJECT_DIR$/usecases/usecases.iml" filepath="$PROJECT_DIR$/usecases/usecases.iml" />

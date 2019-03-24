@@ -2,7 +2,9 @@ package com.weather.entities
 
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
+import android.support.annotation.NonNull
 import com.google.gson.annotations.SerializedName
+
 
 @Entity
 data class FavoriteCityId(@field:PrimaryKey val id: Long)
