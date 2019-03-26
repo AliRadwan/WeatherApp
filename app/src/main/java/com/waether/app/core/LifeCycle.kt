@@ -37,12 +37,10 @@ class ActivitiesLifecycleCallbacks : Application.ActivityLifecycleCallbacks{
     }
 
     override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
-        val layoutId = activity.javaClass
+        activity.javaClass
             .getAnnotation(ContentViewId::class.java)
-            .layoutId
-
-        activity.setContentView(layoutId)
-
+            ?.layoutId
+            ?.also { activity.setContentView(it) }
     }
 
 }

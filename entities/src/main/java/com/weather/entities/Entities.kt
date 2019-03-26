@@ -8,7 +8,6 @@ import java.io.Serializable
 
 
 
-
 @Entity
 data class FavoriteCityId(@field:PrimaryKey val id: Long)
 
