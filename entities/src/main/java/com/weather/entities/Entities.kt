@@ -28,10 +28,12 @@ data class ForecastsResponse(
 
 
 
+
 data class Coordinates(
     @field:SerializedName("lat") val latitude: Double?,
     @field:SerializedName("lon") val longitude: Double?
 ) : Serializable
+
 
 
 
