@@ -11,8 +11,10 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
 class HomeViewModel(
+
     val searchProgress: MutableLiveData<Boolean> = false.toMutableLiveData(),
     val citiesResult: CitiesResult = ArrayList<City>().toMutableLiveData(),
+
     private val searchCityByName: SearchCityByNameUseCase = SearchCityByNameUseCase(
         searchProgress,
         citiesResult
