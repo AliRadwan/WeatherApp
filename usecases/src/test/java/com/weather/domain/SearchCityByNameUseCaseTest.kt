@@ -10,6 +10,7 @@ import org.junit.Assert
 import org.junit.Rule
 import org.junit.Test
 
+
 // usecase 1 : search city by name
 // if is searching, then do not trigger action
 // city name must not be null
@@ -26,6 +27,7 @@ class SearchCityByNameUseCaseTest {
     @Test
     fun `invoke with successful response then update result`() {
 
+
         // Arrange
         val searching = MutableLiveData<Boolean>()
         val cityName = "any name"
@@ -39,7 +41,6 @@ class SearchCityByNameUseCaseTest {
 
         // Assert
         Assert.assertTrue(result.value!!.isNotEmpty())
-
     }
 
     // city name must not be null
@@ -60,6 +61,7 @@ class SearchCityByNameUseCaseTest {
 
         // Assert
         Assert.assertTrue(result.value == null)
+
 
     }
 
@@ -102,19 +104,20 @@ class SearchCityByNameUseCaseTest {
 
         // Assert
         Assert.assertTrue(result.value == null)
-
     }
 
 }
 
+
+val fakeCitiesList = listOf(
+    City(0L, "", "", null),
+    City(0L, "", "", null)
+)
+
 class CitiesRepositoryForSearchCityByName : CitiesRepositoryMock() {
 
-    val result = listOf(
-        City(0L, "", "", null),
-        City(0L, "", "", null)
-    )
-
     override fun searchCitiesByName(name: String): List<City> {
-        return result
+
+        return fakeCitiesList
     }
 }
